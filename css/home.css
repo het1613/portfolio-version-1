@@ -1,0 +1,167 @@
+#home {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5em;
+  margin-left: 15%;
+  margin-right: 15%;
+  padding-top:15%
+}
+
+.sec h1{
+  color: var(--clr-accent)
+}
+
+.sec h5 span.typed-text {
+  color: var(--clr-accent);
+}
+.sec h5 span.cursor {
+  display: inline-block;
+  background-color: #000;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+.sec h5 span.cursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0%  { background-color: #000; }
+  49% { background-color: #000; }
+  50% { background-color: transparent; }
+  99% { background-color: transparent; }
+  100%  { background-color: #000; }
+}
+
+.briefbio{
+  font-size: 1.125em;
+  margin-top: 1em;
+}
+
+.briefbio a{
+  color: var(--clr-accent);
+  font-size: 1.125em;
+  margin-top: 1em;
+  font-weight: bold;
+}
+
+.sec2 img{
+  max-width: 350px;
+}
+
+#moreinfo{
+  position: relative;
+  text-align: center;
+  padding-top: 8%;
+  animation: dropeffect 0.8s ease;
+}
+
+#moreinfo .btn{
+  font-weight: bold;
+}
+
+#moreinfo img{
+  max-width: 25px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  filter: invert(54%) sepia(80%) saturate(326%) hue-rotate(128deg) brightness(95%) contrast(89%);
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes dropeffect{
+    0%{
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(10px);
+    }
+    60% {
+      transform: translateY(10px);
+    }
+  }
+
+
+@media (max-width: 600px) {
+  #home {
+    overflow:hidden;
+    flex-direction: column;
+    padding-top:35%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .sec2 img{
+    margin-top: 2.5em;
+    width: 250px;
+  }
+
+  .briefbio{
+    font-size: 1em;
+    margin-top: 1em;
+  }
+
+  #moreinfo img{
+    max-width: 15px;
+  }
+
+  #moreinfo{
+    margin-bottom: -10%;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1000px) {
+  #home {
+    overflow:hidden;
+    flex-direction: column;
+    padding-top:28%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .sec h5{
+    font-size: 2.25em
+  }
+
+  .sec2 img{
+    margin-top: 2.5em;
+    width: 300px;
+  }
+
+  .briefbio{
+    font-size: 1em;
+    margin-top: 1em;
+  }
+
+  #moreinfo img{
+    max-width: 15px;
+  }
+}
+
+
+@media (min-width: 1001px) and (max-width: 1025px){
+  #home {
+    margin-right: 8%;
+    margin-left: 8%;
+    justify-content: space-between;
+  }
+
+  .sec h5{
+    font-size: 2.10em
+  }
+
+}

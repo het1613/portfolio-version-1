@@ -1,0 +1,137 @@
+#experience {
+  position: relative;
+  margin-bottom: 0em;
+  margin-right: 15%;
+  margin-left: 15%;
+}
+
+#experiencespacer{
+  margin-bottom:0em
+}
+
+.experiencetitle{
+  margin-bottom: 20px;
+}
+
+[data-tab-content] {
+  display: none;
+}
+
+.active[data-tab-content] {
+  display: block;
+}
+
+.tabdisplay{
+  display: flex;
+}
+
+.tabs {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  max-width:310px;
+  min-width: 310px;
+  height: 100%;
+  color: var(--clr-dark);
+  border-left: 3px solid var(--clr-accent)
+}
+
+.experiences{
+  margin-left: 30px;
+  text-align: justify;
+}
+
+.experiences p{
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.experiences ul{
+  margin-left: 20px;
+}
+
+.tab {
+  cursor: pointer;
+  padding: 10px;
+}
+
+.tab.active {
+  color:  var(--clr-accent);
+  font-weight: bold;
+  border-left: 4px solid var(--clr-accent);
+
+}
+
+.tab:hover {
+  background-color: rgba(58, 175, 169, 0.15);
+  border-radius: 0px 5px 5px 0px;
+  color:  var(--clr-accent);
+  transition: 0.3s
+}
+
+@media (max-width: 600px) {
+  #experience {
+    position: relative;
+    margin-bottom: -10%;
+    margin-right: 10%;
+    margin-left: 10%;
+    overflow:hidden;
+  }
+
+  #experiencespacer{
+    margin-bottom: 20%
+  }
+
+  .tabdisplay{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tabs {
+    max-width:250px;
+    min-width: 250px;
+    height: 100%;
+    color: var(--clr-dark);
+    border-left: 3px solid var(--clr-accent)
+  }
+
+  .experiences{
+    margin-left: 0px;
+    margin-top: 30px;
+    text-align: left;
+  }
+
+}
+
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  #experience {
+    position: relative;
+    margin-bottom: 0em;
+    margin-right: 10%;
+    margin-left: 10%;
+    overflow:hidden;
+
+  }
+
+  .tabdisplay{
+    display: flex;
+  }
+
+  .tabs {
+    max-width:175px;
+    min-width: 175px;
+    height: 100%;
+    color: var(--clr-dark);
+    border-left: 3px solid var(--clr-accent)
+  }
+
+  .experiences{
+    margin-left: 20px;
+    margin-top: 0px;
+    text-align: left;
+  }
+
+}

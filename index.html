@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/HP_logo_accent.png">
+
+    <title>Het Patel</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;900&display=swap" rel="stylesheet">
+
+    <link rel='stylesheet' href='css/style.css'>
+    <link rel='stylesheet' href='css/nav.css'>
+    <link rel='stylesheet' href='css/home.css'>
+    <link rel='stylesheet' href='css/about.css'>
+    <link rel='stylesheet' href='css/experience.css'>
+    <link rel='stylesheet' href='css/projects.css'>
+    <link rel='stylesheet' href='css/contact.css'>
+
+    <script src='navbar.js'></script>
+
+  </head>
+
+  <body>
+
+    <div id="particles-js"></div>
+
+    <!-- Navigation Bar -->
+    <header>
+      <nav id='navbar'>
+        <div class="logo">
+          <a href='index.html'><img src="img/HP_logo_white.png" alt="" width='60'></a>
+        </div>
+
+        <ul class='nav-links'>
+          <li><a href="#about" class='links'>About</a></li>
+          <li><a href="#experience" class='links'>Experience</a></li>
+          <li><a href="#project" class='links'>Projects</a></li>
+          <li><a href="#contact" class='links'>Contact</a></li>
+          <li><a href="Het_Patel_Resume.pdf" class="resume" target="_blank">Resume</a></li>
+        </ul>
+        <div class='burger' id='burger1'>
+          <div class='line1'></div>
+          <div class='line2'></div>
+          <div class='line3'></div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- HOME -->
+    <section class='intro' id='home'>
+      <div class="sec">
+        <h4 class="section__title section__title--intro">Hi, my name is</h4>
+        <h1 class="section__title section__title--intro"><strong>Het Patel</strong></h1>
+        <h5>I am <span class="typed-text"></span><span class="cursor">&nbsp;</span></h5>
+        <p class="briefbio">I study <a href="https://uwaterloo.ca/future-students/programs/systems-design-engineering">Systems Design Engineering</a> at the <a href="https://uwaterloo.ca/">University of Waterloo</a> & mainly focus on software development.</p>
+
+      </div>
+
+      <div class="sec2">
+        <img src="img/memoji.png" alt="Apple Memoji of Het">
+      </div>
+    </section>
+
+    <div id='moreinfo'>
+      <a href="#about" class='btn'>Check Out More About Me</a>
+      <a href='#about'><img src="img/downarrow.png" alt=""></a>
+    </div>
+
+    <!-- About Me -->
+    <section class="about" id="about">
+      <div id='aboutspacer'>
+        <h1>&nbsp</h1>
+      </div>
+      <h2 class="aboutmetitle">About Me</h2>
+      <div class="infoaboutme">
+        <div class="personalinfo">
+          <img class='headshot' src="img/headshot.png" alt="Headshot of Het" width='250'>
+          <div class='icons'>
+            <div class='email'>
+              <a href="mailto:het.patel1@uwaterloo.ca" target="_blank"><img src='img/email.png'></a>
+              <a href="mailto:het.patel1@uwaterloo.ca" target="_blank" style='font-size:15px'>het.patel1@uwaterloo.ca</a>
+            </div>
+            <div class='phone'>
+              <a href="tel:+1-416-990-5267" target="_blank"><img src='img/phone.png'></a>
+              <a href="tel:+1-416-990-5267" target="_blank">(416)-990-5267</a>
+            </div>
+            <div class='linkedin'>
+              <a href="https://www.linkedin.com/in/het1613/" target="_blank"><img src='img/linkedin.png'></a>
+              <a href="https://www.linkedin.com/in/het1613/" target="_blank">het1613</a>
+            </div>
+            <div class='github'>
+              <a href="https://github.com/het1613" target="_blank"><img src='img/github.png'></a>
+              <a href="https://github.com/het1613" target="_blank">het1613</a>
+            </div>
+          </div>
+        </div>
+        <div class="bio">
+          <p class='p1'>Hi, I'm Het, a Systems Design Engineering student at UWaterloo hoping to develop a career in software development. I focus mainly on back-end development; however, my growing interest in front-end development has encouraged me to try and build new things (like this website!).</p>
+          <p class='p2'>Recently, I’ve been working with HTML/CSS, JS, C++, Python, and SolidWorks. I am always looking for opportunities to apply my skills to create innovative projects that help solve real-world issues.</p>
+          <div class="interests">
+            <p>Some of my interests:</p>
+            <div class='columns'>
+              <ul class"column1" id='test123'>
+                <li>Playing/watching basketball</li>
+                <li>Riding motorcycles</li>
+                <li>Hackathons</li>
+              </ul>
+              <ul class'column2'>
+                <li>Painting</li>
+                <li>Cooking</li>
+                <li>CrossFit</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Experience -->
+    <section class="experience" id="experience">
+      <div id='experiencespacer'>
+        <h1>&nbsp</h1>
+      </div>
+      <h2 class="experiencetitle">Experience</h2>
+      <div class='tabdisplay'>
+        <ul class="tabs">
+          <li data-tab-target="#compsciclub" class="active tab">CBSS Computer Science Club</li>
+          <li data-tab-target="#wonderland" class="tab">Canada's Wonderland</li>
+          <li data-tab-target="#firstrobotics" class="tab">FIRST Robotics</li>
+          <li data-tab-target="#aircadets" class="tab">283 Royal Canadian Air Cadets</li>
+          <li data-tab-target="#treasurer" class="tab">CBSS Athletic Council</li>
+          <!-- <li data-tab-target="#shopifystore" class="tab">Shopify Store</li> -->
+        </ul>
+        <div class="experiences">
+          <div id="compsciclub" data-tab-content class="active">
+            <h3>President & Founder <span style="color:var(--clr-accent)">@ Castlebrooke Computer Science Club</span></h3>
+            <p>October 2019 - May 2021</p>
+            <ul>
+              <li>Created competitions and hackathons for the club</li>
+              <li>Oversaw postings of weekly lessons and mentored other executives</li>
+              <li>Analyzed monthly reports of student engagement to find ways to further develop/grow the club</li>
+              <li>My contribution allowed 104 eager hackers to expand their Python skills and tackle UWaterloo CCC</li>
+            </ul>
+          </div>
+
+          <div id="wonderland" data-tab-content>
+            <h3>Admissions Associate <span style="color:var(--clr-accent)">@ Canada's Wonderland</span></h3>
+            <p>May - August 2019, May - August 2021</p>
+            <ul>
+              <li>Completed parking tolls, ticket sales and Season Pass transactions on a computer-based cash system</li>
+              <li>Often worked along side Guest Services to resolve guest complaints and disputes</li>
+              <li>Kept organized records of each transaction and completed required paperwork on a timely basis</li>
+            </ul>
+          </div>
+
+          <div id="firstrobotics" data-tab-content>
+            <h3>Captain of Innovation Challenge Team <span style="color:var(--clr-accent)">@ FIRST Robotics</span></h3>
+            <p>October 2020 - April 2021</p>
+            <ul>
+              <li>Lead school’s FIRST Innovation Challenge team for rookie year debut</li>
+              <li>Ensured project for challenge was completed on time with best effort by holding weekly team meetings, planning out project deadlines, assigning tasks to members and providing support to team</li>
+              <li>Coached team in Python, AutoCAD and SolidWorks to complete project</li>
+            </ul>
+          </div>
+
+          <div id="aircadets" data-tab-content>
+            <h3>Flight Sergeant <span style="color:var(--clr-accent)">@ 283 Royal Canadian Air Cadets</span></h3>
+            <p>September 2015 - October 2019</p>
+            <ul>
+              <li>Managed and controlled a flight of 24 cadets under my direct supervision</li>
+              <li>Assisted staff in managing the squadron and training of junior cadets</li>
+              <li>Participated in the planning and organization of squadron activities</li>
+              <li>Instructed/taught cadets aviation related topics and drill</li>
+              <li>Cut down parade drill sequence completion time by 13s (23%)</li>
+            </ul>
+          </div>
+
+          <div id="treasurer" data-tab-content>
+            <h3>Treasurer <span style="color:var(--clr-accent)">@ CBSS Athletic Council</span></h3>
+            <p>Oct 2019 - May 2021</p>
+            <ul>
+              <li>Planned how to use school funds most efficiently and establish budgets for school events throughout the year</li>
+              <li>Generated balance sheets/income statements and create monthly/annual financial reports for the council</li>
+              <li>Responsible for sorting and collecting money and keeping track of the deposit box during ACE events</li>
+            </ul>
+          </div>
+
+          <!-- <div id="shopifystore" data-tab-content>
+            <h3><span style="color:var(--clr-accent)">The Neck Cyclone Store</span></h3>
+            <p>November 2019 - September 2020</p>
+            <ul>
+              <li>Line 1</li>
+              <li>Line 2</li>
+              <li>Line 3</li>
+              <li>Line 4</li>
+            </ul>
+          </div> -->
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Projects -->
+    <section class="project" id="project">
+      <div id='projectspacer'>
+        <h1>&nbsp</h1>
+      </div>
+      <h2 class="projecttitle">Projects</h2>
+      <div class="projects">
+        <div class="test">
+          <div class="projecttext" id='wellmatic'>
+            <a href="https://github.com/het1613" target="_blank"><h3>Wellmatic (Water Well System Schematic Planner)</h3></a>
+            <ul>
+              <li>Built an app to create schematics of water well systems depending on size for a hydrogeologist consulting firm</li>
+              <li>Implemented option to export individual water well data and schematic plan to Excel and Notepad using File I/O </li>
+              <li>Key Feature: Allow user to include drawdown values (flow rate, transitivity, aquifer storage coefficient) for each well individually</li>
+            </ul>
+          </div>
+          <div class'projectimg'>
+            <a href="https://github.com/het1613" target="_blank"><img src="img/wellmaticpic.png" alt="Screenshot of Wellmatic"></a>
+          </div>
+        </div>
+
+        <div class="test" id='sortingproject'>
+          <div class'projectimg'>
+            <a href="https://github.com/het1613" target="_blank"><img src="img/sortinggif2.gif" alt="Screenshot of the Sorting Algorithm Visulizer"></a>
+          </div>
+          <div class="projecttext" id='sortingalgorithm'>
+            <a href="https://github.com/het1613" target="_blank"><h3>Sorting Algorithm Visulizer</h3></a>
+            <ul>
+              <li>Programmed a visual/teaching aid to demonstrate 8 most common sorting algorithms (bubble, merge, quick, etc.)</li>
+              <li>Implemented sliders for sorting speed and min/max data values to visually see how bars of different height are being sorted in ascending order</li>
+              <li>Designed a user-friendly GUI using Python Tkinter that anyone can use to learn about sorting algorithms</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="test">
+          <div class="projecttext" id='thirdproject'>
+            <a href="https://github.com/het1613" target="_blank"><h3>Third Project</h3></a>
+            <ul>
+              <li>Line 1</li>
+              <li>Line 2</li>
+              <li>Line 3</li>
+            </ul>
+          </div>
+          <div class'projectimg'>
+            <a href="https://github.com/het1613" target="_blank"><img src="img/grass.jpg" alt="Screenshot of Wellmatic"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div id='contact'>
+        <h2>Get In Touch</h2>
+        <p>Thank you for taking the time to look through my portfolio. I'm alaways looking for new opportunities & love meeting new people to gain unique experiences, so feel free to reach out & I'll get back to you as soon as possible!</p>
+        <div id='footer-icons' class='icons'>
+          <div class='email' id='email'>
+            <a href="mailto:het.patel1@uwaterloo.ca" target="_blank"><img src='img/email.png'></a>
+            <a href="mailto:het.patel1@uwaterloo.ca" target="_blank">het.patel1@uwaterloo.ca</a>
+          </div>
+          <div class='phone' id='phone'>
+            <a href="tel:+1-416-990-5267" target="_blank"><img src='img/phone.png'></a>
+            <a href="tel:+1-416-990-5267" target="_blank">(416)-990-5267</a>
+          </div>
+          <div class='linkedin' id='linkedin'>
+            <a href="https://www.linkedin.com/in/het1613/" target="_blank"><img src='img/linkedin.png'></a>
+            <a href="https://www.linkedin.com/in/het1613/" target="_blank">het1613</a>
+          </div>
+          <div class='github' id='github'>
+            <a href="https://github.com/het1613" target="_blank"><img src='img/github.png'></a>
+            <a href="https://github.com/het1613" target="_blank">het1613</a>
+          </div>
+        </div>
+      </div>
+
+      <p id='credits'> Designed & Built by Het Patel &copy; 2021</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script>particlesJS.load('particles-js', 'particlesjs-config.json', function(){console.log('particlesjs-config,json loaded...')})</script>
+    <script src='typingeffect.js'></script>
+    <script src='tabtable.js'></script>
+    <script src='mobilenavbar.js'></script>
+
+
+  </body>
+</html>

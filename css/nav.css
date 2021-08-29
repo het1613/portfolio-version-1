@@ -1,0 +1,224 @@
+@media (min-width: 601px){
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    overflow: hidden;
+    padding-top:1em;
+    padding-left: 4em;
+    padding-right: 4em;
+    padding-bottom:0.5em;
+    z-index:10;
+    position: fixed;
+    width: 100%;
+    transition: background-color 200ms linear;
+  }
+
+  .logo img{
+    max-width: 50px;
+    filter: brightness(0%);
+  }
+
+  .nav-links{
+    display:flex;
+    justify-content: space-around;
+    width: 50%
+  }
+
+  .links {
+    text-decoration: none;
+    margin: 30px;
+    font-size: var(--fs-h4);
+    font-weight: bold;
+    transition: 0.3s;
+  }
+
+  .nav-links li{
+    list-style: none;
+  }
+
+  .burger{
+    display: none;
+  }
+
+  .resume{
+    border: 2px solid var(--clr-accent);
+    border-radius: 20px;
+    padding: 12px;
+    color: var(--clr-accent);
+    font-weight: bold;
+    text-decoration: none;
+    margin: 30px;
+    font-size: var(--fs-h4);
+    transition: 0.3s;
+  }
+  .resume:hover{
+    background-color: rgba(58, 175, 169, 0.15);
+  }
+  .nav-links a:hover{
+    color: var(--clr-accent)
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1000px){
+  .nav-links{
+    display:flex;
+    justify-content: space-around;
+    width: 80%
+  }
+  .links{
+    margin: 20px
+  }
+}
+
+@media (min-width: 1001px) and (max-width: 1025px){
+  .nav-links{
+    display:flex;
+    justify-content: space-around;
+    width: 70%
+  }
+}
+
+@media (min-width: 1026px) and (max-width: 1250px){
+  .nav-links{
+    display:flex;
+    justify-content: space-around;
+    width: 90%
+  }
+}
+
+
+@media (max-width: 600px){
+  nav{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom:5%;
+    padding-top: 5%;
+    align-items: center;
+    /* min-height: 13vh; */
+    background-color: none;
+    z-index: 5;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    backdrop-filter: blur(5px);
+    transition: background-color 200ms linear;
+  }
+
+  .logo img{
+    filter: brightness(0%);
+    width: 20%
+  }
+
+  .links {
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+    transition: 0.3s;
+  }
+
+  .nav-links li{
+    list-style: none;
+    opacity: 0;
+  }
+
+  .burger{
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav-links{
+    z-index:1;
+    position: absolute;
+    right: 0px;
+    height: 83vh;
+    top: 15vh;
+    background-color: rgba(43, 122, 120);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    border: 5px solid var(--clr-accent);
+    border-right: none;
+
+  }
+
+  .resume{
+    border: 2px solid var(--clr-dark);
+    border-radius: 20px;
+    padding: 12px;
+    color: var(--clr-dark);
+    font-weight: bold;
+    text-decoration: none;
+    margin: 30px;
+    font-size: 1.5em;
+    transition: 0.3s;
+  }
+
+  .resume:hover{
+    background-color: rgba(205, 230, 228, 0.25);
+  }
+
+  .nav-links a:hover{
+    color: var(--clr-dark)
+  }
+
+  #about{
+
+  }
+}
+
+.burger div{
+  width: 25px;
+  height: 3px;
+  background-color: var(--clr-accent);
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+.nav-active{
+  transform: translateX(0%);
+
+}
+
+@keyframes navLinkFade{
+  from{
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0px);
+
+  }
+}
+
+.toggle .line1{
+  transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+  opacity:0;
+}
+.toggle .line3{
+  transform: rotate(45deg) translate(-5px,-6px);
+}
+
+.logo img:hover{
+  filter: invert(54%) sepia(80%) saturate(326%) hue-rotate(128deg) brightness(95%) contrast(89%);
+}
+
+.scrolling-active nav {
+  background-color: rgba(58, 175, 169, 0.15);
+  transition: background-color 200ms linear;
+}
+
+.scrolling-active .logo img:hover{
+  filter: invert(54%) sepia(80%) saturate(326%) hue-rotate(128deg) brightness(95%) contrast(89%);
+}

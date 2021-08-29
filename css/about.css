@@ -1,0 +1,173 @@
+#about {
+  position: relative;
+  margin-right: 15%;
+  margin-left: 15%;
+}
+
+#aboutspacer{
+  margin-bottom:0px
+}
+
+.infoaboutme{
+  display: flex;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.personalinfo{
+  width: 90%;
+}
+
+.personalinfo img{
+  margin-bottom: 10px;
+  border-radius: 20px;
+}
+
+.contact_links li{
+  list-style: none;
+}
+
+.icons img{
+  width: 20px;
+  margin-right: 15px;
+  filter: brightness(0%);
+}
+
+.email, .phone, .linkedin, .github{
+  display: flex;
+}
+
+.bio{
+  margin-left: 50px;
+}
+
+.p1{
+  text-align: justify;
+}
+
+.p2{
+  margin-top: 10px;
+  text-align: justify;
+}
+
+.interests{
+  margin-top: 10px;
+}
+
+.columns{
+  display: flex;
+  /* justify-content: space-between; */
+  /* width: 60% */
+}
+
+#test123 {
+  margin-right: 40px;
+}
+
+.columns li{
+  list-style: none;
+}
+
+.columns li:before{
+  content: '\2764';
+  color: var(--clr-accent);
+  margin-right: 13px
+}
+
+.email:hover img{filter: invert(54%) sepia(80%) saturate(326%) hue-rotate(128deg) brightness(95%) contrast(89%);}
+.email:hover a{color: var(--clr-accent)}
+
+.phone:hover img{filter: invert(54%) sepia(80%) saturate(326%) hue-rotate(128deg) brightness(95%) contrast(89%);}
+.phone:hover a{color: var(--clr-accent)}
+
+.linkedin:hover img{filter: invert(54%) sepia(80%) saturate(326%) hue-rotate(128deg) brightness(95%) contrast(89%);}
+.linkedin:hover a{color: var(--clr-accent)}
+
+.github:hover img{filter: invert(54%) sepia(80%) saturate(326%) hue-rotate(128deg) brightness(95%) contrast(89%);}
+.github:hover a{color: var(--clr-accent)}
+
+
+@media (max-width: 600px){
+  #about {
+    position: relative;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-bottom: -10%;
+    overflow:hidden;
+  }
+
+  #aboutspacer{
+    margin-bottom: 20%
+  }
+
+  .infoaboutme{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .email a, .phone a, .linkedin a, .github a{
+    font-size: 15px;
+  }
+
+  .bio{
+    margin-left: 0px;
+    margin-top: 1em;
+  }
+
+  .columns{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1000px){
+  #about {
+    position: relative;
+    margin-right: 10%;
+    margin-left: 10%;
+    overflow:hidden;
+  }
+
+  .personalinfo{
+    display: flex;
+    align-items: center;
+  }
+
+  .headshot{
+    margin-right: 5%;
+    width:25%
+  }
+
+  .infoaboutme{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .email a, .phone a, .linkedin a, .github a{
+    font-size: 15px;
+  }
+
+  .bio{
+    margin-left: 0px;
+    margin-top: 1em;
+  }
+
+  .columns{
+    display: flex;
+  }
+
+}
+
+@media (min-width: 1001px) and (max-width: 1025px){
+  #about {
+    position: relative;
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+
+  .columns{
+    display: flex;
+  }
+}
