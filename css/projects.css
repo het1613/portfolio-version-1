@@ -92,6 +92,10 @@
   #sortingproject{
     flex-direction: column-reverse;
   }
+  
+  #blockproject{
+    flex-direction: column-reverse;
+  }
 
   #wellmatic{
     text-align: left;
